@@ -28,8 +28,108 @@ subproject "$MARMALADE_ROOT/s3e/edk"
 
 if {{defined I3D_OS_IPHONE}}
 {
+    includepaths
+    {
+        AdWhirlSDK_iOS_3.1.1/AdNetworkLibs
+        AdWhirlSDK_iOS_3.1.1/AdWhirl/legacy
+        AdWhirlSDK_iOS_3.1.1/AdWhirl/internal
+        AdWhirlSDK_iOS_3.1.1/AdWhirl/adapters
+    	AdWhirlSDK_iOS_3.1.1/TouchJSON
+		AdWhirlSDK_iOS_3.1.1/TouchJSON/Extensions
+		AdWhirlSDK_iOS_3.1.1/TouchJSON/JSON
+    }
     files
     {
+		["AdWhirlSDK_iOS_3.1.1"]
+		(AdWhirlSDK_iOS_3.1.1)
+		["AdWhirlSDK_iOS_3.1.1/AdNetworkLibs"]
+		(AdWhirlSDK_iOS_3.1.1/AdNetworkLibs)
+		["AdWhirlSDK_iOS_3.1.1/AdWhirl"]
+		(AdWhirlSDK_iOS_3.1.1/AdWhirl)
+		"AdWhirlDelegateProtocol.h"
+		"AdWhirlView.h"
+		["AdWhirlSDK_iOS_3.1.1/AdWhirl/adapters"]
+		(AdWhirlSDK_iOS_3.1.1/AdWhirl/adapters)
+		"AdWhirlAdNetworkAdapter.h"
+		["AdWhirlSDK_iOS_3.1.1/AdWhirl/internal"]
+		(AdWhirlSDK_iOS_3.1.1/AdWhirl/internal)
+		"AdWhirlAdapterCustom.h"
+		"AdWhirlAdapterCustom.m"
+		"AdWhirlAdapterEvent.h"
+		"AdWhirlAdapterEvent.m"
+		"AdWhirlAdapterGeneric.h"
+		"AdWhirlAdapterGeneric.m"
+		"AdWhirlAdNetworkAdapter+Helpers.h"
+		"AdWhirlAdNetworkAdapter+Helpers.m"
+		"AdWhirlAdNetworkAdapter.m"
+		"AdWhirlAdNetworkConfig.h"
+		"AdWhirlAdNetworkConfig.m"
+		"AdWhirlAdNetworkRegistry.h"
+		"AdWhirlAdNetworkRegistry.m"
+		"AdWhirlClassWrapper.h"
+		"AdWhirlClassWrapper.m"
+		"AdWhirlConfig.h"
+		"AdWhirlConfig.m"
+		"AdWhirlConfigStore.h"
+		"AdWhirlConfigStore.m"
+		"AdWhirlCustomAdView.h"
+		"AdWhirlCustomAdView.m"
+		"AdWhirlError.h"
+		"AdWhirlError.m"
+		"AdWhirlLog.h"
+		"AdWhirlLog.m"
+		"AdWhirlView+.h"
+		"AdWhirlView.m"
+		"AdWhirlWebBrowserController.h"
+		"AdWhirlWebBrowserController.m"
+		"ARRollerView.m"
+		"AWNetworkReachabilityDelegate.h"
+		"AWNetworkReachabilityWrapper.h"
+		"AWNetworkReachabilityWrapper.m"
+		"UIColor+AdWhirlConfig.h"
+		"UIColor+AdWhirlConfig.m"
+		["AdWhirlSDK_iOS_3.1.1/AdWhirl/legacy"]
+		(AdWhirlSDK_iOS_3.1.1/AdWhirl/legacy)
+		"ARRollerProtocol.h"
+		"ARRollerView.h"
+		["AdWhirlSDK_iOS_3.1.1/TouchJSON"]
+		(AdWhirlSDK_iOS_3.1.1/TouchJSON)
+		"CDataScanner.h"
+		"CDataScanner.m"
+		["AdWhirlSDK_iOS_3.1.1/TouchJSON/Extensions"]
+		(AdWhirlSDK_iOS_3.1.1/TouchJSON/Extensions)
+		"CDataScanner_Extensions.h"
+		"CDataScanner_Extensions.m"
+		"NSCharacterSet_Extensions.h"
+		"NSCharacterSet_Extensions.m"
+		"NSDictionary_JSONExtensions.h"
+		"NSDictionary_JSONExtensions.m"
+		"NSScanner_Extensions.h"
+		"NSScanner_Extensions.m"
+		["AdWhirlSDK_iOS_3.1.1/TouchJSON/JSON"]
+		(AdWhirlSDK_iOS_3.1.1/TouchJSON/JSON)
+		"CJSONDataSerializer.h"
+		"CJSONDataSerializer.m"
+		"CJSONDeserializer.h"
+		"CJSONDeserializer.m"
+		"CJSONScanner.h"
+		"CJSONScanner.m"
+		"CJSONSerializer.h"
+		"CJSONSerializer.m"
+		"CSerializedJSONData.h"
+		"CSerializedJSONData.m"
+
+
+
+		["GoogleAdMobAdsSDK"]
+		(GoogleAdMobAdsSDK)
+		"GADBannerView.h"
+		"GADBannerViewDelegate.h"
+		"GADInterstitial.h"
+		"GADInterstitialDelegate.h"
+		"GADRequest.h"
+		"GADRequestError.h"
+	
         ["source"]
         (use_first_found, source/iphone, source/generic)
         s3eAdWhirl_platform.mm
